@@ -1,16 +1,15 @@
-
-echo "how many no. of terms in series"
+echo "terms "
 read n
 x=0
 y=1
 i=2
-echo "fibonacci series upto $n terms:"
+echo "fibonacci"
 echo "$x"
 echo "$y"
 while [ $i -lt $n ]
 do
-i=`expr $i + 1 `
-z=`expr $x + $y`
+i=$((i+1))
+z=$((x+y))
 echo "$z"
 x=$y
 y=$z
